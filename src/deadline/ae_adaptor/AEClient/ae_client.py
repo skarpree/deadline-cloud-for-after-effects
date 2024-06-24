@@ -60,7 +60,7 @@ class AEClient(ClientInterface):
             stderr_handler=regexhandler,
         )
         # Wait for socket to be alive
-        SOCKET_WAIT_SECONDS = 15
+        SOCKET_WAIT_SECONDS = 30
         time.sleep(SOCKET_WAIT_SECONDS)
 
     def close(self, args: Optional[dict] = None) -> None:
